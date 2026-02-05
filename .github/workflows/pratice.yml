@@ -1,0 +1,10 @@
+name: pratice
+
+on: 
+    push: 
+          branches: [ "main"]
+
+jobs:
+    
+                    
+
