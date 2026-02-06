@@ -1,13 +1,20 @@
 name: pratice
 
 on: 
-    push: 
-          branches: [ "main"]
+    branches;:
+            pull: ["main"]
 
 jobs:
-    name: checkout
-    steps:
-        uses: actions/checkout@v6
+    build:
+        runs-on: ubuntu-latest
+
+        steps:
+         -name: check out
+          uses: actions/checkout@v4
+        
+         -name: files
+          run: ls -la
+             
     
                     
 
