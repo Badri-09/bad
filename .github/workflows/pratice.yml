@@ -1,8 +1,8 @@
 name: pratice
 
 on: 
-    branches:
-            push: ["main"]
+    push:
+        branches: ["main"]
 
 jobs:
     build:
