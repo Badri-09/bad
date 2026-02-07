@@ -5,15 +5,15 @@ on:
         branches: ["main"]
 
 jobs:
-    build:
-        runs-on: ubuntu-latest
+  build:
+    runs-on: ubuntu-latest
 
-        steps:
-              -name: checkout
-              uses: actions/checkout@v6
-            
-             -name: files
-             run: ls -la
+    steps:
+          -name: checkout
+          uses: actions/checkout@v6
+        
+         -name: files
+         run: ls -la
              
     
                     
