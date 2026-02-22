@@ -2,14 +2,14 @@ name: pratice
 
 on: 
  push:
-    branches: ["main"]
+    branches: ["master"]
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: checkout
+      - name: chekout
         uses: actions/checkout@v6
 
       - name: files
