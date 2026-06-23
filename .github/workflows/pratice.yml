@@ -3,7 +3,7 @@ on: push
 jobs:
   firstjob:
     runs-on: ubuntu-latest
-  steps:
+    steps:
      - name: firststeps
       run: echo "this is first"
 
