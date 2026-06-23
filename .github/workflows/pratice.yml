@@ -4,8 +4,8 @@ jobs:
   firstjob:
     runs-on: ubuntu-latest
     steps:
-     - name: firststeps
-      run: echo "this is first"
+      - name: firststeps
+       run: echo "this is first"
 
   
   
