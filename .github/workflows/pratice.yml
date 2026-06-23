@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: firststeps
-       run: echo "this is first"
+        run: echo "this is first"
 
   
   
