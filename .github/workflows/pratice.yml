@@ -2,9 +2,9 @@ name: github
 on: push
 jobs:
   firstjob:
-  runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
   steps:
-     -name: firststeps
+     - name: firststeps
       run: echo "this is first"
 
   
