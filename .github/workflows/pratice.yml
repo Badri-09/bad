@@ -1,20 +1,14 @@
-name: pratice
-
-on: 
- push:
-    branches: ["master"]
-
+name: github
+on: push
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  firstjob:
+  runs-on: ubuntu-latest
+  steps:
+     -name: firststeps
+      run: echo "this is first"
 
-    steps:
-      - name: chekout
-        uses: actions/checkout@v6
-
-      - name: files
-        run: ls -la
-     
+  
+  
          
     
                     
