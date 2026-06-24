@@ -12,7 +12,12 @@ jobs:
           host: ${{ secrets.SECRETS_HOST }}
           username: ${{ secrets.SECRETS_USERNAME }}
           key: ${{ secrets.SECRETS_KEY }}
-          script: sudo yum update -y
+          script: |
+            sudo yum update -y
+            sudo install httpd -y
+            sudo systemctl start httpd
+          source: "."
+          target: "/home/ec2-user/site"
     
 
   
