@@ -15,7 +15,7 @@ jobs:
           source: "."
           target: "/home/ec2-user/site"
           script: |
-            sudo pwd
+            sudo ls -la
           
           
     
