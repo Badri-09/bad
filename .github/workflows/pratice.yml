@@ -12,7 +12,7 @@ jobs:
           host: ${{ secrets.SECRETS_HOST }}
           username: ${{ secrets.SECRETS_USERNAME }}
           key: ${{ secrets.SECRETS_KEY }}
-          script: whoami
+          script: sudo update
     
 
   
