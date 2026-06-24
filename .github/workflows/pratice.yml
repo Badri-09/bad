@@ -18,7 +18,8 @@ jobs:
             sudo yum update -y 
             sudo yum install httpd -y 
             sudo systemctl start httpd 
-            sudo cd /home/ec2-user/site
+            cd /home/ec2-user/site
+            sudo pwd
             sudo ls -la
           
           
