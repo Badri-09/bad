@@ -14,7 +14,7 @@ jobs:
           key: ${{ secrets.SECRETS_KEY }}
           script: |
             sudo yum update -y
-            sudo install httpd -y
+            sudo yum install httpd -y
             sudo systemctl start httpd
           source: "."
           target: "/home/ec2-user/site"
