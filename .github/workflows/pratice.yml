@@ -4,8 +4,16 @@ jobs:
   firstjob:
     runs-on: ubuntu-latest
     steps:
-      - name: firststeps
-        run: echo "this is first"
+      - name: checkout
+        uses: actions/checkout@v7
+      - name: Execute remote SSH commands using SSH key
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ secrets_HOST }}
+          username: ${{ secrets_USERNAME }}
+          key: ${{ secrets_KEY }}
+        script: whoami
+    
 
   
   
