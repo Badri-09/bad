@@ -15,6 +15,9 @@ jobs:
           source: "."
           target: "/home/ec2-user/site"
           script: |
+            sudo yum update -y 
+            sudo yum install httpd -y 
+            sudo systemctl start httpd 
             sudo ls -la
           
           
